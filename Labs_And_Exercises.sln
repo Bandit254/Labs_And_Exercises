@@ -19,7 +19,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Messing Around 26JAN2020", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA220 - 20200201 - ZSilvis - LAB 3C", "..\ISTA220 - 20200201 - ZSilvis - LAB 3C\ISTA220 - 20200201 - ZSilvis - LAB 3C.csproj", "{663902C9-AF65-453B-8A8E-A63E0ECC84E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTA220 - 20200201 - ZSilvis - EX 3D", "..\ISTA220 - 20200201 - ZSilvis - EX 3D\ISTA220 - 20200201 - ZSilvis - EX 3D.csproj", "{F9FC9BB5-B81D-47AF-929F-D71C095BF335}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA220 - 20200201 - ZSilvis - EX 3D", "..\ISTA220 - 20200201 - ZSilvis - EX 3D\ISTA220 - 20200201 - ZSilvis - EX 3D.csproj", "{F9FC9BB5-B81D-47AF-929F-D71C095BF335}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA220 - 20200208 - ZSilvis - EX 4A (Creating a Farm)", "..\ISTA220 - 20200208 - ZSilvis - EX 4A (Creating a Farm)\ISTA220 - 20200208 - ZSilvis - EX 4A (Creating a Farm).csproj", "{768A4017-6669-4970-8CC4-B3C0454C28B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test-For-GitHub", "Test-For-GitHub\Test-For-GitHub.csproj", "{BC867468-24F0-4AE2-AB30-4DC9059947FA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +67,14 @@ Global
 		{F9FC9BB5-B81D-47AF-929F-D71C095BF335}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9FC9BB5-B81D-47AF-929F-D71C095BF335}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9FC9BB5-B81D-47AF-929F-D71C095BF335}.Release|Any CPU.Build.0 = Release|Any CPU
+		{768A4017-6669-4970-8CC4-B3C0454C28B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{768A4017-6669-4970-8CC4-B3C0454C28B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{768A4017-6669-4970-8CC4-B3C0454C28B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{768A4017-6669-4970-8CC4-B3C0454C28B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC867468-24F0-4AE2-AB30-4DC9059947FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC867468-24F0-4AE2-AB30-4DC9059947FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC867468-24F0-4AE2-AB30-4DC9059947FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC867468-24F0-4AE2-AB30-4DC9059947FA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
