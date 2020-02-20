@@ -23,7 +23,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA220 - 20200201 - ZSilvi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA220 - 20200208 - ZSilvis - EX 4A (Creating a Farm)", "..\ISTA220 - 20200208 - ZSilvis - EX 4A (Creating a Farm)\ISTA220 - 20200208 - ZSilvis - EX 4A (Creating a Farm).csproj", "{768A4017-6669-4970-8CC4-B3C0454C28B8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test-For-GitHub", "Test-For-GitHub\Test-For-GitHub.csproj", "{BC867468-24F0-4AE2-AB30-4DC9059947FA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Test-For-GitHub", "Test-For-GitHub\Test-For-GitHub.csproj", "{BC867468-24F0-4AE2-AB30-4DC9059947FA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTA220 - 20200222 - ZSilvis - EX 6A", "ISTA220 - 20200222 - ZSilvis - EX 6A\ISTA220 - 20200222 - ZSilvis - EX 6A.csproj", "{18CD823D-CA88-4441-A796-3CA52F3C8FEE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -75,6 +77,10 @@ Global
 		{BC867468-24F0-4AE2-AB30-4DC9059947FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC867468-24F0-4AE2-AB30-4DC9059947FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC867468-24F0-4AE2-AB30-4DC9059947FA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{18CD823D-CA88-4441-A796-3CA52F3C8FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{18CD823D-CA88-4441-A796-3CA52F3C8FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{18CD823D-CA88-4441-A796-3CA52F3C8FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{18CD823D-CA88-4441-A796-3CA52F3C8FEE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
