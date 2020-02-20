@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ISTA220___20200125___ZSilvis___EX_2C</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="C:\Users\pc\OneDrive\Documents\MSSA\01. San Diego %28Cloud Application Developer%29\01. Classes\ISTA 220 - Programming in C Sharp\03. Exercises\ISTA220 - 20200125 - ZSilvis - EX_2C %28Recursive Methods%29.cs" Link="ISTA220 - 20200125 - ZSilvis - EX_2C %28Recursive Methods%29.cs" />
+  </ItemGroup>
+
+</Project>

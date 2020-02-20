@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ISTA220___20200125___ZSilvis___LAB_2C__Monte_Carlo_Method_</RootNamespace>
+  </PropertyGroup>
+
+</Project>
