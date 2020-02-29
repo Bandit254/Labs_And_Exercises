@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ISTA322___20200229___ZSilvis___EX_7A__Military_Unit_</RootNamespace>
+  </PropertyGroup>
+
+</Project>
