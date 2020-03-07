@@ -27,7 +27,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA220 - 20200201 - ZSilvi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA220 - 20200201 - ZSilvis - LAB 3C", "ISTA220 - 20200201 - ZSilvis - LAB 3C\ISTA220 - 20200201 - ZSilvis - LAB 3C.csproj", "{042C7F54-1B2E-4601-B91C-15005B6B3A2F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTA322 - 20200229 - ZSilvis - EX 7A (Military Unit)", "ISTA322 - 20200229 - ZSilvis - EX 7A (Military Unit)\ISTA322 - 20200229 - ZSilvis - EX 7A (Military Unit).csproj", "{5A06E0C7-ECDE-4A00-B758-FF0036E2A1A5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA322 - 20200229 - ZSilvis - EX 7A (Military Unit)", "ISTA322 - 20200229 - ZSilvis - EX 7A (Military Unit)\ISTA322 - 20200229 - ZSilvis - EX 7A (Military Unit).csproj", "{5A06E0C7-ECDE-4A00-B758-FF0036E2A1A5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RouletteWheel", "RouletteWheel\RouletteWheel.csproj", "{F4790C37-A6DA-4D5D-A8B3-C981416ED147}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +89,10 @@ Global
 		{5A06E0C7-ECDE-4A00-B758-FF0036E2A1A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A06E0C7-ECDE-4A00-B758-FF0036E2A1A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5A06E0C7-ECDE-4A00-B758-FF0036E2A1A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4790C37-A6DA-4D5D-A8B3-C981416ED147}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4790C37-A6DA-4D5D-A8B3-C981416ED147}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4790C37-A6DA-4D5D-A8B3-C981416ED147}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4790C37-A6DA-4D5D-A8B3-C981416ED147}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
