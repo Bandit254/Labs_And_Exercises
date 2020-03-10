@@ -6,7 +6,7 @@ namespace RouletteWheel
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Modelling a Roulette Wheel.\n");
+            Console.WriteLine("Modeling a Roulette Wheel.\n");
 
             Console.WriteLine("Welcome to The Mos Eisley Casino! We have the best roulette game in the galaxy!\n");
             Console.WriteLine("Tell us about yourself since you seem to be new to this spaceport.");
