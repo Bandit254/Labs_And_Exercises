@@ -1,0 +1,34 @@
+﻿@model IEnumerable<ISTA322___20200314___ZSilvis___LAB_9C__Working_with_Visual_Studio_.Models.Product>
+
+
+@{
+    Layout = null;
+}
+<!DCOTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Working With Visual Studio - Zach Silvis</title>
+    <link rel="stylesheet" href="css/bundle.min.css" />
+    <script src="~/js/bundle.min.js"></script>
+    
+</head>
+<body>
+    <h3>Products</h3>
+    <p>Request Time: @DateTime.Now.ToString("HH:mm:ss")</p>
+    <table>
+        <thead>
+            <tr><td>Name</td><td>Price</td></tr>
+        </thead>
+        <tbody>
+            @foreach (var p in Model)
+            {
+                <tr>
+                    <td>@p.Name</td>
+                    <td>@($"{p.Price:C2}")</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</body>
+</html>
