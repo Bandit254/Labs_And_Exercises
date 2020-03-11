@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ISTA322___20200314___ZSilvis___EX_9A__Bisection_Algorithm_</RootNamespace>
+  </PropertyGroup>
+
+</Project>

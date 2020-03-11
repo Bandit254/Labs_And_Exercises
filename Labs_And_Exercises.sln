@@ -35,7 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA322 - 20200314 - ZSilvi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Language Features", "..\Language Features\Language Features.csproj", "{A6E1758C-A053-457F-B1DA-43CE5524A172}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTA322 - 20200314 - ZSilvis - LAB 9C (Working with Visual Studio)", "ISTA322 - 20200314 - ZSilvis - LAB 9C (Working with Visual Studio)\ISTA322 - 20200314 - ZSilvis - LAB 9C (Working with Visual Studio).csproj", "{3CEE1B2C-D59A-4432-8185-2FAA9A04AA9F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA322 - 20200314 - ZSilvis - LAB 9C (Working with Visual Studio)", "ISTA322 - 20200314 - ZSilvis - LAB 9C (Working with Visual Studio)\ISTA322 - 20200314 - ZSilvis - LAB 9C (Working with Visual Studio).csproj", "{3CEE1B2C-D59A-4432-8185-2FAA9A04AA9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTA322 - 20200314 - ZSilvis - EX 9A (Bisection Algorithm)", "ISTA322 - 20200314 - ZSilvis - EX 9A (Bisection Algorithm)\ISTA322 - 20200314 - ZSilvis - EX 9A (Bisection Algorithm).csproj", "{B35046C9-4FBC-48ED-9DE9-23603215DBE5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +113,10 @@ Global
 		{3CEE1B2C-D59A-4432-8185-2FAA9A04AA9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3CEE1B2C-D59A-4432-8185-2FAA9A04AA9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3CEE1B2C-D59A-4432-8185-2FAA9A04AA9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B35046C9-4FBC-48ED-9DE9-23603215DBE5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B35046C9-4FBC-48ED-9DE9-23603215DBE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B35046C9-4FBC-48ED-9DE9-23603215DBE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B35046C9-4FBC-48ED-9DE9-23603215DBE5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
