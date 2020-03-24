@@ -9,7 +9,7 @@ namespace ISTA322___20200314___ZSilvis___EX_9A__Bisection_Algorithm_
             Console.WriteLine("Implementing Binary Search and Creating a 'Guess my Number' game.\n");
 
             //Basic demonstration of binary search:
-            
+            /*
             int[] inputArray = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             int targetNumber = 7;
             Console.WriteLine($"We're going to see how many guesses it takes for the computer to find our target number from an array of numbers.");
@@ -18,7 +18,7 @@ namespace ISTA322___20200314___ZSilvis___EX_9A__Bisection_Algorithm_
             Console.WriteLine($"\n");
             Console.WriteLine($"\nAnd the number we want the computer to find is: {targetNumber}. Let's see how long it takes...\n");
             BinarySearch(targetNumber, inputArray, 0);
-            
+            */
 
             //Human Player:
             /*
@@ -28,13 +28,13 @@ namespace ISTA322___20200314___ZSilvis___EX_9A__Bisection_Algorithm_
             Console.WriteLine("The computer has selected a random number between 1 and 1000. Try to figure out what that number is in the fewest number of guesses!\n");
             BinarySearchHumanPlayer(targetNumber, inputArray, 0);
             */
-            /*
+            
             //Computer Player:
             int[] inputArray = MakeArray(100);
             Console.WriteLine("Now it's the computer's turn to play with a larger array.\n");
             Console.WriteLine("Enter a number between 1 and 100 and the computer will try to guess it: ");
             int targetNumber = Convert.ToInt32(Console.ReadLine());
-            BinarySearchComputerPlayer(targetNumber, inputArray, 0);*/
+            BinarySearchComputerPlayer(targetNumber, inputArray, 0);
         }
 
         public static void BinarySearch(int targetNumber, int[] inputArray, int counter)
