@@ -5,12 +5,12 @@ namespace ISTA_220___20200125___ZSilvis___LAB_2C__Monte_Carlo_Method_
     class Program
     {
 
-        private (double, double) monteCarloGenerator(double sideOne, double sideTwo)
+        //private (double, double) monteCarloGenerator(double sideOne, double sideTwo)
         {
-            double sideOne = System.Random();
-            double sideTwo = System.Random();
+            //double sideOne = System.Random();
+           //double sideTwo = System.Random();
 
-            return;
+            //return;
         }
 
         private static double hypotenuseCalc(double sideOne, double sideTwo)

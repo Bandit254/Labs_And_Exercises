@@ -37,7 +37,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Language Features", "..\Lan
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA322 - 20200314 - ZSilvis - LAB 9C (Working with Visual Studio)", "ISTA322 - 20200314 - ZSilvis - LAB 9C (Working with Visual Studio)\ISTA322 - 20200314 - ZSilvis - LAB 9C (Working with Visual Studio).csproj", "{3CEE1B2C-D59A-4432-8185-2FAA9A04AA9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTA322 - 20200314 - ZSilvis - EX 9A (Bisection Algorithm)", "ISTA322 - 20200314 - ZSilvis - EX 9A (Bisection Algorithm)\ISTA322 - 20200314 - ZSilvis - EX 9A (Bisection Algorithm).csproj", "{B35046C9-4FBC-48ED-9DE9-23603215DBE5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA322 - 20200314 - ZSilvis - EX 9A (Bisection Algorithm)", "ISTA322 - 20200314 - ZSilvis - EX 9A (Bisection Algorithm)\ISTA322 - 20200314 - ZSilvis - EX 9A (Bisection Algorithm).csproj", "{B35046C9-4FBC-48ED-9DE9-23603215DBE5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA421 - 20200328 - ZSilvis - LAB 1A (Unit Testing an MVC Application)", "ISTA421 - 20200338 - ZSilvis - LAB 1A (Unit Testing an MVC Application)\ISTA421 - 20200328 - ZSilvis - LAB 1A (Unit Testing an MVC Application).csproj", "{A026E159-7045-4DAA-8ADD-F803AA7E669F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithVisualStudio.Tests", "WorkingWithVisualStudio.Tests\WorkingWithVisualStudio.Tests.csproj", "{D1BF7FF9-84D5-4DA3-8756-016A8548147A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -117,6 +121,14 @@ Global
 		{B35046C9-4FBC-48ED-9DE9-23603215DBE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B35046C9-4FBC-48ED-9DE9-23603215DBE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B35046C9-4FBC-48ED-9DE9-23603215DBE5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A026E159-7045-4DAA-8ADD-F803AA7E669F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A026E159-7045-4DAA-8ADD-F803AA7E669F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A026E159-7045-4DAA-8ADD-F803AA7E669F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A026E159-7045-4DAA-8ADD-F803AA7E669F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D1BF7FF9-84D5-4DA3-8756-016A8548147A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D1BF7FF9-84D5-4DA3-8756-016A8548147A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D1BF7FF9-84D5-4DA3-8756-016A8548147A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D1BF7FF9-84D5-4DA3-8756-016A8548147A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
