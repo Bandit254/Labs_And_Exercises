@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>ISTA421___20200328___ZSilvis___EX_1A__Using_Properties_</RootNamespace>
+  </PropertyGroup>
+
+</Project>

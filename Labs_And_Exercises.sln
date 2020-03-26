@@ -41,7 +41,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA322 - 20200314 - ZSilvi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA421 - 20200328 - ZSilvis - LAB 1A (Unit Testing an MVC Application)", "ISTA421 - 20200338 - ZSilvis - LAB 1A (Unit Testing an MVC Application)\ISTA421 - 20200328 - ZSilvis - LAB 1A (Unit Testing an MVC Application).csproj", "{A026E159-7045-4DAA-8ADD-F803AA7E669F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkingWithVisualStudio.Tests", "WorkingWithVisualStudio.Tests\WorkingWithVisualStudio.Tests.csproj", "{D1BF7FF9-84D5-4DA3-8756-016A8548147A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkingWithVisualStudio.Tests", "WorkingWithVisualStudio.Tests\WorkingWithVisualStudio.Tests.csproj", "{D1BF7FF9-84D5-4DA3-8756-016A8548147A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA421 - 20200328 - ZSilvis - EX1B (Key Value Store)", "ISTA421 - 20200328 - ZSilvis - EX1B (Key Value Store)\ISTA421 - 20200328 - ZSilvis - EX1B (Key Value Store).csproj", "{6D4B5464-8321-4A53-9B78-6DACA33F8F14}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA421 - 20200328 - ZSilvis - EX 1A (Using Properties)", "ISTA421 - 20200328 - ZSilvis - EX 1A (Using Properties)\ISTA421 - 20200328 - ZSilvis - EX 1A (Using Properties).csproj", "{5C99C72E-9FB7-4D0A-A799-57F1CE5D21AD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -129,6 +133,14 @@ Global
 		{D1BF7FF9-84D5-4DA3-8756-016A8548147A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D1BF7FF9-84D5-4DA3-8756-016A8548147A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D1BF7FF9-84D5-4DA3-8756-016A8548147A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6D4B5464-8321-4A53-9B78-6DACA33F8F14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6D4B5464-8321-4A53-9B78-6DACA33F8F14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6D4B5464-8321-4A53-9B78-6DACA33F8F14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6D4B5464-8321-4A53-9B78-6DACA33F8F14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C99C72E-9FB7-4D0A-A799-57F1CE5D21AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C99C72E-9FB7-4D0A-A799-57F1CE5D21AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C99C72E-9FB7-4D0A-A799-57F1CE5D21AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C99C72E-9FB7-4D0A-A799-57F1CE5D21AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
