@@ -13,359 +13,166 @@ namespace ISTA421___20200328___ZSilvis___EX_1A__Using_Properties_
         public static void PokemonJourney()
         {
             //Object Instantiation
-        
-            Pikachu wildPikachu = new Pikachu();
-            Charmander wildCharmander = new Charmander();
-            Bulbasaur wildBulbasaur = new Bulbasaur();
-            Squirtle wildSquirtle = new Squirtle();
+            Pikachu pikachu = new Pikachu();
             Trainer ash = new Trainer("Ash", "Pallet Town", 0);
-            Trainer blaine = new Trainer("Blaine", "Cinabar Island", 7);
-            Trainer erika = new Trainer("Erika", "Celadon City", 4);
-            Trainer misty = new Trainer("Misty", "Cerulean City", 3);
-            Squirtle mrBubbles = new Squirtle("Mr. Bubbles", "Hydro Pump", "Sitrus Berry", "Water");
-            Pikachu sparky = new Pikachu("Sparky", "Thunderbolt", "Oran Berry", "Electric");
-            Charmander toasty = new Charmander("Toasty", "Flamethrower", "Cherri Berry", "Fire");
-            Bulbasaur leafy = new Bulbasaur("Leafy", "Solar Beam", "Chesto Berry", "Grass", "Poison");
+            Trainer defaultTrainer = new Trainer();
         
-            //Story Introduction
-            Console.WriteLine("Hello there! My name is Professor Oak, welcome to the Kanto Region! Today we will follow the stories of four Pokemon trainers as they catch their Pokemon partners and battle to determine who is the strongest!\n\n");
-        
-            //Ash catches his wild Pokemon
+            //Story
             ash.Speak();
-            wildPikachu.WildPokemonAppears();
-            wildPikachu.Attack();
+            Console.WriteLine("\n");
+            pikachu.WildPokemonAppears();
+            pikachu.Attack();
             ash.CatchPokemon("Poke Ball", "Pikachu");
-            wildPikachu.HasType();
+            pikachu.HasType();
             Console.WriteLine("Alright! I caught a Pikachu! I'm going to call you Sparky!");
-            sparky.Speak();
-            Console.WriteLine("Sparky joined Ash's team!\n");
-            //Blaine catches his wild Pokemon
-            blaine.Speak();
-            wildCharmander.WildPokemonAppears();
-            wildCharmander.Attack();
-            blaine.CatchPokemon("Great Ball", "Charmander");
-            wildCharmander.HasType();
-            Console.WriteLine("Alright! I caught a Charmander! I'm going to call you Toasty!");
-            toasty.Speak();
-            Console.WriteLine("Toasty joined Blaine's team!\n");
-            //Erika catches her wild Pokemon
-            erika.Speak();
-            wildBulbasaur.WildPokemonAppears();
-            wildBulbasaur.Attack();
-            erika.CatchPokemon("Ultra Ball", "Bulbasaur");
-            wildBulbasaur.HasType();
-            Console.WriteLine("Alright! I caught a Bulbasaur! I'm going to call you Leafy!");
-            leafy.Speak();
-            Console.WriteLine("Leafy joined Erika's team!\n");
-            //Misty catches her wild Pokemon
-            misty.Speak();
-            wildSquirtle.WildPokemonAppears();
-            wildSquirtle.Attack();
-            misty.CatchPokemon("Net Ball", "Squirtle");
-            wildSquirtle.HasType();
-            Console.WriteLine("Alright! I caught a Squirtle! I'm going to call you Mr. Bubbles!");
-            mrBubbles.Speak();
-            Console.WriteLine("Leafy joined Misty's team!\n");
-        
-            //Beginning of the tournament
-            Console.WriteLine("Hello there! Professor Oak here again! Now that our four trainers have caught their Pokemon partners they will now begin the tournament to determine who will be the Pokemon Champion!\n");
-        
-            //Pokemon Tournament, Round 1 (Ash vs Misty)
-            Console.WriteLine("\tRound 1: Ash vs. Misty");
-            ash.ChallengeTrainer("Misty");
-            misty.AcceptChallenge("Ash");
-            ash.ChoosePokemon("Sparky");
-            misty.ChoosePokemon("Mr. Bubbles");
-            mrBubbles.Attack();
-            sparky.Eats();
-            sparky.Recovers();
-            sparky.Attack();
-            mrBubbles.Faints();
-            Console.WriteLine("Ash is victorious over Misty!\n");
-        
-            //Pokemon Tournament, Round 2 (Blaine vs Erika)
-            Console.WriteLine("\tRound 2: Blaine vs. Erika");
-            blaine.ChallengeTrainer("Erika");
-            erika.AcceptChallenge("Blaine");
-            blaine.ChoosePokemon("Toasty");
-            erika.ChoosePokemon("Leafy");
-            leafy.Attack();
-            toasty.Eats();
-            toasty.Recovers();
-            toasty.Attack();
-            leafy.Faints();
-            Console.WriteLine("Blaine is victorious over Erika!\n");
-        
-            //Pokemon Tournament, Round 3 (Blaine vs Ash)
-            Console.WriteLine("\tRound 3: Blaine vs Ash for the Championship");
-            blaine.ChallengeTrainer("Ash");
-            ash.AcceptChallenge("Blaine");
-            blaine.ChoosePokemon("Toasty");
-            ash.ChoosePokemon("Sparky");
-            toasty.Attack();
-            sparky.Eats();
-            sparky.Recovers();
-            sparky.Attack();
-            toasty.Faints();
-            Console.WriteLine("\n\tAsh is victorious over Blaine! He is the new Pokemon Champion!\n");
-        
-        
-        
+            pikachu.GivenName = "Sparky";
+            Console.WriteLine("\n");
+            Console.WriteLine($"Let's see what your Pokemon ID number is...oh, it's {pikachu.IdNumber}, got it!");
+            Console.WriteLine($"{pikachu.GivenName} joined Ash's team!\n");
+            Console.WriteLine("\n");
+            Console.WriteLine($"{pikachu.GivenName}, I'm going to give you some food to recover from our battle.");
+            pikachu.Eats();
+            Console.WriteLine("Oh no! That was my last Oran Berry, but you're clearly still hungry. How about a Sitrus Berry?");
+            pikachu.FoodType = "Sitrus Berry";
+            pikachu.Eats();
+            Console.WriteLine("\n");
+            Console.WriteLine("Good! I'm glad you liked those Sitrus Berries! Now, let's teach you a stronger attack! Instead of Thunder Shock, you can now use Thunder Bolt!");
+            pikachu.AttackName = "Thunder Bolt";
+            pikachu.Attack();
+            Console.WriteLine("Now you've gotten the hang of it! Let's challenge a gym leader now!");
+            Console.WriteLine("\n");
+            defaultTrainer.Speak();
+            ash.ChallengeTrainer(defaultTrainer.TrainerName);
+            Console.WriteLine($"Just wait a number there, {ash.TrainerName}. Firs I need to know what your trainer ID is to make sure it's valid. It must be between 2,000 and 20,000.");
+            Console.WriteLine($"My trainer ID is {ash.TrainerID}. Happy now???");
+            Console.WriteLine("Yes, we can battle now! ");
+            Console.WriteLine("\n");
+            defaultTrainer.AcceptChallenge(ash.TrainerName);
+            Console.WriteLine("You'll never beat me and my bird Pokemon! Go. Pidgeotto!");
+            ash.ChoosePokemon(pikachu.GivenName);
+            Console.WriteLine($"{pikachu.GivenName}, use that new move I showed you!");
+            pikachu.Attack();
+            Console.WriteLine($"Great hit, {pikachu.GivenName}! That super-effective move made {defaultTrainer.TrainerName}'s Pidgeotto faint! We won!");
+            Console.WriteLine($"Congratulations, {ash.TrainerName}. Let me give you a gym badge.");
+            ash.NumberOfGymBadges = 1;
+            Console.WriteLine($"Alright! Thanks for the great battle, {defaultTrainer.TrainerName}! I may only have {ash.NumberOfGymBadges} gym badge, but I will someday defeat the Elite Four with my best friend {pikachu.GivenName}!");
         }
       
         class Pikachu
         {
-            private string givenName;
-            private string attackName;
-            private string foodType;
-            private string typeOne;
-        
+            private string _givenName;
+            private string _attackName;
+            private string _foodType;
+            private string _typeOne;
+            private int _idNumber;
+            //Read-only ID Number Property:
+            public int IdNumber
+            {
+                get { return this._idNumber; }
+            }
+            public string GivenName
+            {
+                get { return this._givenName; }
+                set { this._givenName = value; }
+            }
+            public string FoodType
+            {
+                get { return this._foodType; }
+                set { this._foodType = value; }
+            }
+            public string AttackName
+            {
+                get { return this._attackName; }
+                set { this._attackName = value; }
+            }
+            public string TypeOne
+            {
+                get { return this._typeOne; }
+                set { this._typeOne = value; }
+            }
             public void Speak()
             {
-                Console.WriteLine($"My name is {givenName} the Pikachu!");
+                Console.WriteLine($"My name is {GivenName} the Pikachu!");
             }
             public void Attack()
             {
-                Console.WriteLine($"{givenName} used {attackName}!");
+                Console.WriteLine($"{GivenName} used {AttackName}!");
             }
-        
             public void Eats()
             {
-                Console.WriteLine($"{givenName} ate an {foodType}!");
+                Console.WriteLine($"{GivenName} ate an {FoodType}!");
             }
-        
             public void HasType()
             {
-                Console.WriteLine($"{givenName}'s type is {typeOne}!");
+                Console.WriteLine($"{GivenName}'s type is {TypeOne}!");
             }
-        
             public void Recovers()
             {
-                Console.WriteLine($"{givenName} recovered strength after eating the {foodType}");
+                Console.WriteLine($"{GivenName} recovered strength after eating the {FoodType}");
             }
-        
             public void Faints()
             {
-                Console.WriteLine($"{givenName} fainted! Better take {givenName} to a Pokemon center as soon as the battle ends!");
+                Console.WriteLine($"{GivenName} fainted! Better take {GivenName} to a Pokemon center as soon as the battle ends!");
             }
-        
             public void WildPokemonAppears()
             {
-                Console.WriteLine($"A {givenName} appeared! The startled Pokemon attacked!");
+                Console.WriteLine($"A {GivenName} appeared! The startled Pokemon attacked!");
             }
-        
             public Pikachu() //Default Constructor
             {
-                givenName = "Wild Pikachu";
-                attackName = "Thundershock";
-                foodType = "Oran Berry";
-                typeOne = "Electric";
+                _givenName = "Wild Pikachu";
+                _attackName = "Thundershock";
+                _foodType = "Oran Berry";
+                _typeOne = "Electric";
+                Random r = new Random();
+                _idNumber = r.Next(1000, 100001);
             }
-        
-            public Pikachu(string givenName, string attackName, string foodType, string typeOne) //1st Constructor
+            public Pikachu(string GivenName, string AttackName, string FoodType, string TypeOne) //1st Constructor
             {
-                this.givenName = givenName;
-                this.attackName = attackName;
-                this.foodType = foodType;
-                this.typeOne = typeOne;
+                this._givenName = GivenName;
+                this._attackName = AttackName;
+                this._foodType = FoodType;
+                this._typeOne = TypeOne;
+                Random r = new Random();
+                _idNumber = r.Next(1000, 100001);
             }
-        
         }
-        
-        class Charmander
-        {
-            private string givenName;
-            private string attackName;
-            private string foodType;
-            private string typeOne;
-        
-            public void Speak()
-            {
-                Console.WriteLine($"My name is {givenName} the Charmander!");
-            }
-            public void Attack()
-            {
-                Console.WriteLine($"{givenName} used {attackName}!");
-            }
-        
-            public void Eats()
-            {
-                Console.WriteLine($"{givenName} ate an {foodType}!");
-            }
-        
-            public void HasType()
-            {
-                Console.WriteLine($"{givenName}'s type is {typeOne}!");
-            }
-        
-            public void Recovers()
-            {
-                Console.WriteLine($"{givenName} recovered strength after eating the {foodType}");
-            }
-        
-            public void Faints()
-            {
-                Console.WriteLine($"{givenName} fainted! Better take {givenName} to a Pokemon center as soon as the battle ends!");
-            }
-        
-            public void WildPokemonAppears()
-            {
-                Console.WriteLine($"A {givenName} appeared! The startled Pokemon attacked!");
-            }
-        
-            public Charmander() //Default Constructor
-            {
-                givenName = "Wild Charmander";
-                attackName = "Ember";
-                foodType = "Cherri Berry";
-                typeOne = "Fire";
-            }
-        
-            public Charmander(string givenName, string attackName, string foodType, string typeOne) //1st Constructor
-            {
-                this.givenName = givenName;
-                this.attackName = attackName;
-                this.foodType = foodType;
-                this.typeOne = typeOne;
-            }
-        
-        }
-        
-        class Bulbasaur
-        {
-            private string givenName;
-            private string attackName;
-            private string foodType;
-            private string typeOne;
-            private string typeTwo;
-        
-            public void Speak()
-            {
-                Console.WriteLine($"My name is {givenName} the Bulbasaur!");
-            }
-            public void Attack()
-            {
-                Console.WriteLine($"{givenName} used {attackName}!");
-            }
-        
-            public void Eats()
-            {
-                Console.WriteLine($"{givenName} ate an {foodType}!");
-            }
-        
-            public void HasType()
-            {
-                Console.WriteLine($"{givenName}'s types are {typeOne} and {typeTwo}!");
-            }
-        
-            public void Recovers()
-            {
-                Console.WriteLine($"{givenName} recovered strength after eating the {foodType}");
-            }
-        
-            public void Faints()
-            {
-                Console.WriteLine($"{givenName} fainted! Better take {givenName} to a Pokemon center as soon as the battle ends!");
-            }
-        
-            public void WildPokemonAppears()
-            {
-                Console.WriteLine($"A {givenName} appeared! The startled Pokemon attacked!");
-            }
-        
-            public Bulbasaur() //Default Constructor
-            {
-                givenName = "Wild Bulbasaur";
-                attackName = "Razor Leaf";
-                foodType = "Chesto Berry";
-                typeOne = "Grass";
-                typeTwo = "Poison";
-            }
-        
-            public Bulbasaur(string givenName, string attackName, string foodType, string typeOne, string typeTwo) //1st Constructor
-            {
-                this.givenName = givenName;
-                this.attackName = attackName;
-                this.foodType = foodType;
-                this.typeOne = typeOne;
-                this.typeTwo = typeOne;
-            }
-        
-        }
-        
-        class Squirtle
-        {
-            private string givenName;
-            private string attackName;
-            private string foodType;
-            private string typeOne;
-        
-            public void Speak()
-            {
-                Console.WriteLine($"My name is {givenName} the Squirtle!");
-            }
-            public void Attack()
-            {
-                Console.WriteLine($"{givenName} used {attackName}!");
-            }
-        
-            public void Eats()
-            {
-                Console.WriteLine($"{givenName} ate an {foodType}!");
-            }
-        
-            public void HasType()
-            {
-                Console.WriteLine($"{givenName}'s type is {typeOne}!");
-            }
-        
-            public void Recovers()
-            {
-                Console.WriteLine($"{givenName} recovered strength after eating the {foodType}");
-            }
-        
-            public void Faints()
-            {
-                Console.WriteLine($"{givenName} fainted! Better take {givenName} to a Pokemon center as soon as the battle ends!");
-            }
-        
-            public void WildPokemonAppears()
-            {
-                Console.WriteLine($"A {givenName} appeared! The startled Pokemon attacked!");
-            }
-        
-            public Squirtle() //Default Constructor
-            {
-                givenName = "Wild Squirtle";
-                attackName = "Water Gun";
-                foodType = "Sitrus Berry";
-                typeOne = "Water";
-            }
-        
-            public Squirtle(string givenName, string attackName, string foodType, string typeOne) //1st Constructor
-            {
-                this.givenName = givenName;
-                this.attackName = attackName;
-                this.foodType = foodType;
-                this.typeOne = typeOne;
-            }
-        
-        }
-        
+ 
         class Trainer
         {
-            private string trainerName;
-            private string trainerHomeTown;
-            private int numberOfGymBadges;
-        
+            private string _trainerName;
+            private string _trainerHomeTown;
+            private int _numberOfGymBadges;
+            private int _trainerIDNumber;
+            //Read-only Trainer ID Property:
+            public int TrainerID
+            {
+                get { return this._trainerIDNumber; }
+            }
+            public string TrainerName
+            {
+                get => this._trainerName;
+                set => this._trainerName= value;
+            }
+            public string TrainerHomeTown
+            {
+                get => this._trainerHomeTown;
+                set => this._trainerHomeTown = value;
+            }
+            public int NumberOfGymBadges
+            {
+                get => this._numberOfGymBadges;
+                set => this._numberOfGymBadges = value;
+            }
+
             public void Speak()
             {
-                Console.WriteLine($"My name is {trainerName} from {trainerHomeTown}! I have {numberOfGymBadges} Gym Badges but I wanna be the very best, like no one ever was!");
+                Console.WriteLine($"My name is {TrainerName} from {TrainerHomeTown}! I have {NumberOfGymBadges} Gym Badges but I wanna be the very best, like no one ever was!");
             }
         
             public void CatchPokemon(string pokeballType, string pokemonType)
             {
-                Console.WriteLine($"{trainerName} threw a {pokeballType} and caught a {pokemonType}!");
+                Console.WriteLine($"{TrainerName} threw a {pokeballType} and caught a {pokemonType}!");
             }
         
             public void ChoosePokemon(string pokemonName)
@@ -385,16 +192,20 @@ namespace ISTA421___20200328___ZSilvis___EX_1A__Using_Properties_
         
             public Trainer() //Default Constructor
             {
-                trainerName = "Bird Keeper Toby";
-                trainerHomeTown = "Ekruteak City";
-                numberOfGymBadges = 3;
+                _trainerName = "Bird Keeper Toby";
+                _trainerHomeTown = "Ekruteak City";
+                _numberOfGymBadges = 3;
+                Random r = new Random();
+                _trainerIDNumber = r.Next(2000, 20001);
             }
         
-            public Trainer(string trainerName, string trainerHomeTown, int numberOfGymBadges) //1st Constructor
+            public Trainer(string TrainerName, string TrainerHomeTown, int NumberOfGymBadges) //1st Constructor
             {
-                this.trainerName = trainerName;
-                this.trainerHomeTown = trainerHomeTown;
-                this.numberOfGymBadges = numberOfGymBadges;
+                this._trainerName = TrainerName;
+                this._trainerHomeTown = TrainerHomeTown;
+                this._numberOfGymBadges = NumberOfGymBadges;
+                Random r = new Random();
+                _trainerIDNumber = r.Next(2000, 20001);
             }
         }
 
