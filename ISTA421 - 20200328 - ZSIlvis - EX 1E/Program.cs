@@ -20,7 +20,7 @@ namespace ISTA421___20200328___ZSIlvis___EX_1E
                 Console.WriteLine($"Decimal to binary conversion is: {DecimalToBinary(inputNumber)}.");
                 Console.WriteLine($"Decimal to octal conversion is: {DecimalToOctal(inputNumber)}.");
             }
-            else if(baseNumber == 2 )
+            else if(baseNumber == 2)
             {
                 Console.WriteLine($"Binary to octal conversion is {BinaryToOctal(inputNumber)}");
                 Console.WriteLine($"Binary to decimal conversion is {BinaryToDecimal(inputNumber)}");
