@@ -41,7 +41,6 @@ namespace ISTA421___20200404___ZSilvis___EX_2A__Key_Value_
                     if (FindValue(indexKey) == null)
                     {
                         PostNewValue(indexKey, value);
-                        //KeyValue newKeyValue = new KeyValue(indexKey, value);
                     }
                     else
                     {

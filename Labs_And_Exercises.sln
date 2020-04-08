@@ -55,7 +55,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA421 - 20200404 - ZSilvi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA421 - 20200404 - ZSilvis - EX 2A (Collections)", "ISTA421 - 20200404 - ZSilvis - EX 2A (Collections)\ISTA421 - 20200404 - ZSilvis - EX 2A (Collections).csproj", "{F60AC2E0-2A6D-4872-91EA-177763840976}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTA421 - 20200411 - ZSilvis - EX 3B", "ISTA421 - 20200411 - ZSilvis - EX 3B\ISTA421 - 20200411 - ZSilvis - EX 3B.csproj", "{4BBC3E2A-2076-4DA6-A9EE-8A03CB1A6E54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA421 - 20200411 - ZSilvis - EX 3B", "ISTA421 - 20200411 - ZSilvis - EX 3B\ISTA421 - 20200411 - ZSilvis - EX 3B.csproj", "{4BBC3E2A-2076-4DA6-A9EE-8A03CB1A6E54}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA421 - 20200411 - ZSilvis - EX 3A (Encrypting Passwords)", "ISTA421 - 20200411 - ZSilvis - EX 3A (Encrypting Passwords)\ISTA421 - 20200411 - ZSilvis - EX 3A (Encrypting Passwords).csproj", "{9337A072-F48D-43FA-8023-971E055F872B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailApplication", "EmailApplication\EmailApplication.csproj", "{762CAC4E-93E0-4AC7-A1FD-DBD581DE0741}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -171,6 +175,14 @@ Global
 		{4BBC3E2A-2076-4DA6-A9EE-8A03CB1A6E54}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4BBC3E2A-2076-4DA6-A9EE-8A03CB1A6E54}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4BBC3E2A-2076-4DA6-A9EE-8A03CB1A6E54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9337A072-F48D-43FA-8023-971E055F872B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9337A072-F48D-43FA-8023-971E055F872B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9337A072-F48D-43FA-8023-971E055F872B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9337A072-F48D-43FA-8023-971E055F872B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{762CAC4E-93E0-4AC7-A1FD-DBD581DE0741}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{762CAC4E-93E0-4AC7-A1FD-DBD581DE0741}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{762CAC4E-93E0-4AC7-A1FD-DBD581DE0741}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{762CAC4E-93E0-4AC7-A1FD-DBD581DE0741}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
