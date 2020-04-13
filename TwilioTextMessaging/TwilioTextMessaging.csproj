@@ -3,11 +3,12 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>ISTA421___20200411___ZSilvis___EX_3A__Encrypting_Passwords_</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
     <PackageReference Include="Twilio" Version="5.39.0" />
+    <PackageReference Include="Twilio.AspNet.Core" Version="5.33.1" />
+    <PackageReference Include="Twilio.AspNet.Mvc" Version="5.33.1" />
   </ItemGroup>
 
 </Project>
