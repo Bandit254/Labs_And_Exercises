@@ -105,7 +105,7 @@ namespace ISTA220___20200125___ZSilvis___EX_2C
            
             return fibRatio;
         }
-        //Good Fibonacci Sequence:
+        //Original Fibonacci Sequence:
         public static long FibonacciTwo(int fibNumber)
         {
             if (fibNumber == 0 || fibNumber == 1)
@@ -113,11 +113,25 @@ namespace ISTA220___20200125___ZSilvis___EX_2C
 
             return FibonacciTwo(fibNumber - 1) + FibonacciTwo(fibNumber - 2);
         }
+        //More-correcter Fibonacci Sequence (updated 27APR2020):
+        public static int Flubbernacci(int flubNumber)
+        {
+            if (flubNumber==1)
+            {
+                return 0;
+            }
+            if (flubNumber==2)
+            {
+                return 1;
+            }
+
+            return Flubbernacci(flubNumber - 1) + Flubbernacci(flubNumber - 2);
+        }
 
         public static double FibonacciRatio(int fibNumber)
         {
-            double fibCurrent = Convert.ToDouble(FibonacciTwo(fibNumber));
-            double fibPrev = Convert.ToDouble(Fibonacci(fibNumber - 1));
+            double fibCurrent = Convert.ToDouble(Flubbernacci(fibNumber));
+            double fibPrev = Convert.ToDouble(Flubbernacci(fibNumber - 1));
             double fibRatio = fibCurrent / fibPrev; ;
             return fibRatio;
         }
@@ -163,11 +177,11 @@ namespace ISTA220___20200125___ZSilvis___EX_2C
 
             //Calculating the Fibonacci Series
             Console.WriteLine("Enter which Fibonacci number you want to calculate:\n");
-            int fibNumber = Convert.ToInt32(Console.ReadLine());
-            long fibCurrent = FibonacciTwo(fibNumber);
-            double fibRatio = Convert.ToDouble(FibonacciTwo(fibNumber)) / Convert.ToDouble(FibonacciTwo(fibNumber - 1));
-            Console.WriteLine($"\n\tThe value of the value of Fibonacci #{fibNumber} is {fibCurrent}");
-            Console.WriteLine($"\n\tThe Ratio between Fibonacci #{fibNumber} and #{fibNumber - 1} is {fibRatio}. Please never make me do this again.");
+            int flubNumber = Convert.ToInt32(Console.ReadLine());
+            int flubberNacci = Flubbernacci(flubNumber);
+            double fibRatio = Convert.ToDouble(Flubbernacci(flubNumber)) / Convert.ToDouble(Flubbernacci(flubNumber - 1));
+            Console.WriteLine($"\n\tThe value of the value of Fibonacci #{flubNumber} is {flubberNacci} (Updated Method)");
+            Console.WriteLine($"\n\tThe Ratio between Fibonacci #{flubNumber} and #{flubNumber - 1} is {fibRatio}.");
 
 
 

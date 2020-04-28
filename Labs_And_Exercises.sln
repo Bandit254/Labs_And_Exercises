@@ -65,7 +65,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TwilioTextMessaging", "Twil
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA421 - 20200418 - ZSilvis - EX4A (Encrypting Messages)", "ISTA421 - 20200418 - ZSilvis - EX4A (Encrypting Messages)\ISTA421 - 20200418 - ZSilvis - EX4A (Encrypting Messages).csproj", "{4C859B5E-02EC-4C7A-AACB-66EF23F00278}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ISTA421 - 20200425 - ZSilvis - EX 5A", "ISTA421 - 20200425 - ZSilvis - EX 5A\ISTA421 - 20200425 - ZSilvis - EX 5A.csproj", "{0CFC0E7B-52C1-45A9-A842-7839A266F792}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ISTA421 - 20200425 - ZSilvis - EX 5A", "ISTA421 - 20200425 - ZSilvis - EX 5A\ISTA421 - 20200425 - ZSilvis - EX 5A.csproj", "{0CFC0E7B-52C1-45A9-A842-7839A266F792}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp5", "..\ConsoleApp5\ConsoleApp5.csproj", "{4B8B00BA-5026-4A58-B9E0-885E93E12060}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -201,6 +203,10 @@ Global
 		{0CFC0E7B-52C1-45A9-A842-7839A266F792}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0CFC0E7B-52C1-45A9-A842-7839A266F792}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0CFC0E7B-52C1-45A9-A842-7839A266F792}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B8B00BA-5026-4A58-B9E0-885E93E12060}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B8B00BA-5026-4A58-B9E0-885E93E12060}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B8B00BA-5026-4A58-B9E0-885E93E12060}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B8B00BA-5026-4A58-B9E0-885E93E12060}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
