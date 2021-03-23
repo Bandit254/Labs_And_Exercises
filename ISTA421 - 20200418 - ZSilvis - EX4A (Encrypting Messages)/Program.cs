@@ -7,30 +7,56 @@ namespace ISTA421___20200418___ZSilvis___EX4A__Encrypting_Messages_
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Write a program that cleans and encrypts a given string using three different types of encryption keys.\n");
-            Console.Write("Enter a plain text message: ");
-            string input = Console.ReadLine();
-            string cleanedInput = CleanMessage(input);
-            Console.Write("Enter a simple encryption key (a single alphabetical character): ");
-            string simpleKey = Console.ReadLine();
-            Console.Write("Enter a multi-key (more than one alphabetical character, but less than the characters in the plain text message): ");
-            string multiKey = Console.ReadLine();
-            Console.WriteLine($"\n\nThe message you entered was '{input}'");
-            Console.WriteLine($"The simple encryption key you entered was '{simpleKey}'");
-            Console.WriteLine($"The multi-key you entered was '{multiKey}'\n");
-            string encryptedStringSimple = SimpleKeyEncryption(cleanedInput, simpleKey);
-            string encryptedMultiKey = MultiKeyEncryption(cleanedInput, multiKey);
-            string continuousKey = GenerateContinuousKey(cleanedInput, multiKey);
-            string continuousKeyMessage = ContinuousKeyEncryption(cleanedInput, continuousKey);
-            Console.WriteLine($"\nThe encrypted message using the simple key is '{encryptedStringSimple}'");
-            Console.WriteLine($"The encrypted message using the multi-key is: '{encryptedMultiKey}'");
-            Console.WriteLine($"The encrypted message using the continuous key is: '{continuousKeyMessage}.'\n");
-            string decryptedSimple = DecryptSimpleKey(encryptedStringSimple, simpleKey);
-            string decryptedMultiKey = DecryptedMultiKey(encryptedMultiKey, multiKey);
-            string decryptContinuousKey = DecryptContinuousKey(continuousKeyMessage, continuousKey);
-            Console.WriteLine($"\nThe decrypted message using the simple key is '{decryptedSimple}'");
-            Console.WriteLine($"The decrypted message using the multi-key is '{decryptedMultiKey}'");
-            Console.WriteLine($"The decrypted message using the continuous key is '{decryptContinuousKey}'");
+            //Console.WriteLine("Write a program that cleans and encrypts a given string using three different types of encryption keys.\n");
+            //Console.Write("Enter a plain text message: ");
+            //string input = Console.ReadLine();
+            //string cleanedInput = CleanMessage(input);
+            //Console.Write("Enter a simple encryption key (a single alphabetical character): ");
+            //string simpleKey = Console.ReadLine();
+            //Console.Write("Enter a multi-key (more than one alphabetical character, but less than the characters in the plain text message): ");
+            //string multiKey = Console.ReadLine();
+            //Console.WriteLine($"\n\nThe message you entered was '{input}'");
+            //Console.WriteLine($"The simple encryption key you entered was '{simpleKey}'");
+            //Console.WriteLine($"The multi-key you entered was '{multiKey}'\n");
+            //string encryptedStringSimple = SimpleKeyEncryption(cleanedInput, simpleKey);
+            //string encryptedMultiKey = MultiKeyEncryption(cleanedInput, multiKey);
+            //string continuousKey = GenerateContinuousKey(cleanedInput, multiKey);
+            //string continuousKeyMessage = ContinuousKeyEncryption(cleanedInput, continuousKey);
+            //Console.WriteLine($"\nThe encrypted message using the simple key is '{encryptedStringSimple}'");
+            //Console.WriteLine($"The encrypted message using the multi-key is: '{encryptedMultiKey}'");
+            //Console.WriteLine($"The encrypted message using the continuous key is: '{continuousKeyMessage}.'\n");
+            //string decryptedSimple = DecryptSimpleKey(encryptedStringSimple, simpleKey);
+            //string decryptedMultiKey = DecryptedMultiKey(encryptedMultiKey, multiKey);
+            //string decryptContinuousKey = DecryptContinuousKey(continuousKeyMessage, continuousKey);
+            //Console.WriteLine($"\nThe decrypted message using the simple key is '{decryptedSimple}'");
+            //Console.WriteLine($"The decrypted message using the multi-key is '{decryptedMultiKey}'");
+            //Console.WriteLine($"The decrypted message using the continuous key is '{decryptContinuousKey}'");
+
+            Console.Write("Enter the encrypted message: ");
+            string encryptedInput = Console.ReadLine();
+            string cleanedEncryptedInput = CleanMessageV2(encryptedInput);
+            Console.WriteLine($" The cleaned messages is: '{cleanedEncryptedInput}'");
+            string tryAgain = "y";
+            while (String.Equals(tryAgain,"y"))
+            {
+                Console.Write("Enter the letter from the encrypted message that you want to make a guess about: ");
+                string letterFromMessage = Console.ReadLine();
+                Console.Write("Enter your guess for what the letter from the encrypted message actually represents: ");
+                string guessedLetter = Console.ReadLine();
+                string decryptionGuess = DecryptionGuessSimpleKey(cleanedEncryptedInput, letterFromMessage, guessedLetter);
+                Console.WriteLine($"Based on your guess that '{letterFromMessage}' in the encrypted message is actually '{guessedLetter}', the decrypted message is: {decryptionGuess}\n");
+                Console.WriteLine("Does the decrypted message make sense? If you want to try again, enter 'y'. If you guess the message correctly, then enter 'n': ");
+                tryAgain = Console.ReadLine();
+                tryAgain = tryAgain.ToLower();
+            }
+            //Console.Write("Enter the letter from the encrypted message that you want to make a guess about: ");
+            //string letterFromMessage = Console.ReadLine();
+            //Console.Write("Enter your guess for what the letter from the encrypted message actually represents: ");
+            //string guessedLetter = Console.ReadLine();
+            //string decryptionGuess = DecryptionGuessSimpleKey(cleanedEncryptedInput, letterFromMessage, guessedLetter);
+            //Console.WriteLine($"Based on your guess that '{letterFromMessage}' in the encrypted message is actually '{guessedLetter}', the decrypted message is: {decryptionGuess}");
+            //string decryptedMessage = DecryptSimpleKey(cleanedEncryptedInput, susSimpleKey);
+            //Console.WriteLine($"\nThe decrypted message using the simple key is '{decryptedMessage}'");
         }
         public static string CleanMessage(string input)
         {
@@ -50,6 +76,12 @@ namespace ISTA421___20200418___ZSilvis___EX4A__Encrypting_Messages_
                 cleanedPTMessage += cleanedCharList[i];
             }
             return cleanedPTMessage;
+        }
+
+        public static string CleanMessageV2(string input)
+        {
+            input = input.ToUpper();
+            return input;
         }
         public static string SimpleKeyEncryption(string input, string simpleKey)
         {
@@ -83,6 +115,34 @@ namespace ISTA421___20200418___ZSilvis___EX4A__Encrypting_Messages_
                 decryptedSimple += nextChar;
             }
             return decryptedSimple;
+        }
+        public static string DecryptionGuessSimpleKey(string encryptedMessage, string letterFromMessage, string guessedLetter)
+        {
+            string decryptedGuess = "";
+            letterFromMessage = letterFromMessage.ToUpper();
+            guessedLetter = guessedLetter.ToUpper();
+            int numSpaces = (Convert.ToChar(guessedLetter) - Convert.ToChar(letterFromMessage));
+            for (int i = 0; i < encryptedMessage.Length; i++)
+            {
+                if (encryptedMessage[i] <= 90 & encryptedMessage[i] >= 65)
+                {
+                    char nextChar = Convert.ToChar(encryptedMessage[i] + numSpaces);
+                    if (nextChar < 65)
+                    {
+                        nextChar = Convert.ToChar(nextChar + 26);
+                    }
+                    else if (nextChar > 90)
+                    {
+                        nextChar = Convert.ToChar(nextChar - 26);
+                    }
+                    decryptedGuess += nextChar;
+                }
+                else
+                {
+                    decryptedGuess += encryptedMessage[i];
+                }
+            }
+            return decryptedGuess;
         }
         public static string MultiKeyEncryption(string input, string multiKey)
         {
